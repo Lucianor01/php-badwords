@@ -1,16 +1,14 @@
+<!-- PHP -->
 <?php
 
-$fraseCensurata = str_replace($_GET['frase'], '****', $_GET['frase']);
+$parolaCensurata = str_replace($_GET['frase'], '***', $_GET['frase']);
 
-$parola = $_GET['parola'];
 $frase = $_GET['frase'];
 
-
+$parola = $_GET['parola'];
 
 ?>
-
-
-
+<!-- HTML -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,22 +22,22 @@ $frase = $_GET['frase'];
 <body>
 
     <div>
-        <h2>La tua parola è:
-            <?php echo $_GET['parola'] ?>
+        <h2>La tua frase è:
+            <?php echo $frase ?>
+
+        </h2>
+        <h2>
+            La tua frase ha una lunghezza di:
+            <?php echo strlen($frase) ?>
+        </h2>
+        <h2>
+            La tua parola censurata è:
+            <?php echo $parolaCensurata ?>
 
         </h2>
         <h2>
             La tua parola ha la lunghezza di:
-            <?php echo strlen($_GET['parola']) ?>
-        </h2>
-        <h2>
-            La tua frase censurata è:
-            <?php echo $fraseCensurata ?>
-
-        </h2>
-        <h2>
-            La tua frase ha la lunghezza di:
-            <?php echo strlen($fraseCensurata) ?>
+            <?php echo strlen($parola) ?>
         </h2>
     </div>
 
