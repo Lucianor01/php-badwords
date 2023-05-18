@@ -19,7 +19,13 @@
 
 <body>
 
-    <form action="form.php"></form>
+    <form action="form.php" method="GET">
+        <label for="Nome"></label>
+        <input type="text" placeholder="Inserisci una parola" name="parola">
+        <label for="Frase"></label>
+        <input type="text" placeholder="Inserisci una frase" name="frase">
+        <button type="submit">Invia</button>
+    </form>
 
 </body>
 
