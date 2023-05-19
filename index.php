@@ -12,9 +12,9 @@
 <body>
 
     <form action="form.php" method="GET">
-        <label for="Nome"></label>
-        <input type="text" placeholder="Inserisci una frase" name="frase">
         <label for="Frase"></label>
+        <input type="text" placeholder="Inserisci una frase" name="frase">
+        <label for="Parola"></label>
         <input type="text" placeholder="Inserisci una parola" name="parola">
         <button type="submit">Invia</button>
     </form>

@@ -1,7 +1,7 @@
 <!-- PHP -->
 <?php
 
-$parolaCensurata = str_replace($_GET['frase'], '***', $_GET['frase']);
+$parolaCensurata = str_replace($_GET['parola'], '***', $_GET['parola']);
 
 $frase = $_GET['frase'];
 
@@ -36,7 +36,7 @@ $parola = $_GET['parola'];
 
         </h2>
         <h2>
-            La tua parola ha la lunghezza di:
+            La tua parola ha una lunghezza di:
             <?php echo strlen($parola) ?>
         </h2>
     </div>
